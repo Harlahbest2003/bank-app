@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title><link rel="stylesheet" href="bootstrap-file/css/bootstrap.css">
+    <link rel="stylesheet" href="bootstrap-file/js/bootstrap.js">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ <section class="body">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid ">
+          <a class="navbar-brand fs-4 fw-6" href="">HARLAHBEST BANK <img src="image/logo.png" width="100px" alt=""></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" onclick="toggler()" id="toggleButton">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 me-lg-5 " id="listed">
+              <li class="nav-item ms-1">
+                <a class="nav-link active  me-lg-5" aria-current="page" href="home.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">ABOUT ME</a>
+              </li>
+              
+              <li class="nav-item">
+                <a class="nav-link " href="signIn.html" tabindex="-1" >LOGIN</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+             
+            </form>
+          </div>
+        </div>
+      </nav>
+   <div class="content shadow p-3 mb-5 bg-light rounded mt-4 d-lg-flex">
+   <div id="con" class=" shadow p-3 mb-5  rounded mt-4">
+    <img class="rounded-circle" src="image/people.webp" alt="" width="300px" height="300px">
+    <img class="rounded-circle bg-light" src="image/back.png" alt=""  width="300px" height="300px" id="cont">
+    <h1 id="H">TRANSACTION ANYTIME ANYWHERE</h1>
+    <h4>EMPOWERING FINICIAL FUTURES,ONE TRANSACTION AT A TIME</h4>
+   </div>
+   <div class="cont shadow p-3 mb-5  rounded mt-4 bg-light ms-lg-auto me-lg-5" >
+    <h1>
+      HARLAHBEST BANK 
+    </h1>
+    <label for="" class="fs-1 fw-1 ms-4">#</label>
+    <input class="border-none fs-1 fw-1 text-dark  bg-light" type="number" placeholder="#1,500.00" id="accountBalance" style="width: 150px;" readonly> <br><br>
+  
+    <button onclick="transfer()"> TRANSFER</button>
+    <div id="hidden">
+<input type="text" id="accountNumber" placeholder="enter account number">
+<input type="text" id="accountName" placeholder="enter account name"> 
+<input type="text" id="amount" placeholder="enter amount">
+<button onclick="sending()" style="background-color: aqua;"> SEND</button>
+<h6 id="display"></h6>
+
+    </div>
+    <button onclick ="addMoney()">SAVES</button>
+  <div id="saved">
+    <input type="text" id="save" placeholder="ENTER AMOUNT IN #">
+    <button onclick="add()" style="background-color: aqua;">ADD MONEY TO ACCOUNT</button>
+  </div>
+    <br><br>
+    <button onclick="buyData()"> DATA</button>
+    <div id="dat">
+      <input type="text" id="sat" placeholder="ENTER NUMBER">
+      <input type="text" id="dated" placeholder="ENTER MB">
+      <button onclick="data()" style="background-color: aqua;">BUY DATA</button>
+    </div>
+    <button onclick="airtime()">AIRTIME</button> 
+    <div id="tim">
+      <input type="text" id="air" placeholder="ENTER NUMBER">
+      <input type="text" id="airtim" placeholder="ENTER MB">
+      <button onclick="time()" style="background-color: aqua;">BUY DATA</button>
+    </div>
+    <br><br>
+    <button>BORROW</button>
+    <button onclick="history()"> TRANSACTION HISTORY</button>
+    <div id="transaction"></div>
+
+   </div>
+  </div>
+ </section>
+ <script src="script.js"></script>
+</body>
+</html>
