@@ -112,11 +112,12 @@ function airtime(){
     let tim =document.getElementById('tim')
     tim.style.display='block';
 }
-function data() {
-    let buys =document.getElementById('dat')
-    buys.style.display='none';
-    let sate = document.getElementById('sat').value;
-    let mb  = dated.value;
-    alert('YOU SUBSCRIBE '+ mb + ' TO ' + sate);
+function time() {
+    let tims =document.getElementById('tim')
+    tims.style.display='none';
+    let sated = document.getElementById('air').value;
+    let airt = document.getElementById('airtim').value;
+    let card  = Math.floor(100000000000 + Math.random()*900000000000);
+    alert('YOU SUCCESFULLY BUY '+ airt + '   ' + sated +  ' card number: '  +  ' ' +   card); 
     
 }
