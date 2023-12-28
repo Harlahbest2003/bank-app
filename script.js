@@ -121,3 +121,6 @@ function time() {
     alert('YOU SUCCESFULLY BUY '+ airt + '   ' + sated +  ' card number: '  +  ' ' +   card); 
     
 }
+function borrow(){
+    alert('NOT AVAILABLE')
+}
