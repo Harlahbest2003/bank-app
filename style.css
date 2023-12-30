@@ -60,6 +60,33 @@ a{
     padding: 20px;
     margin-top: 10px;
 }
+#btn{
+    width: 300px;
+    height: 50px;
+    background-color:plum;
+    border: none;
+    border-radius: 5px 5px 5px 5px;
+    padding: 20px;
+    margin-top: 10px;
+}
+#btny{
+    width: 300px;
+    height: 50px;
+    background-color:plum;
+    border: none;
+    border-radius: 5px 5px 5px 5px;
+    padding: 20px;
+    margin-top: 10px;
+}
+#btns{
+    width: 300px;
+    height: 50px;
+    background-color:plum;
+    border: none;
+    border-radius: 5px 5px 5px 5px;
+    padding: 20px;
+    margin-top: 10px;
+}
 .two{
     background-image: url(image/background.jpg);
     width: 450px;
@@ -186,5 +213,50 @@ a{
         
        
         
+    }
+    #btn{
+        width: 72.5px;
+        padding: 0;
+        margin-top: 0;
+        margin-left:0;
+    }
+    #btns{
+        width: 70px;
+        padding: 0;
+        margin-top: 0;
+        position: relative;
+        top: -73px;
+        left: 150px;
+        margin-left: 1px;
+    }
+    #btny{
+        width: 70px;
+        padding: 0;
+        margin-top: 0;
+        position: relative;
+        top: -73px;
+        left: 150px;
+        margin-left: 1px;
+    }
+    #btnz{
+        width: 190px;
+        padding: 0;
+        margin-top: 0;
+        position: relative;
+        top: -92px;
+        left: 0px;
+        margin-left: 1px;
+    }
+    #btnb{
+        width: 80px;
+        padding: 0;
+        margin-top: 0;
+        position: relative;
+        top: -90px;
+        left: -4px;
+        margin-left: 1px;
+    }
+    body{
+        overflow-x: hidden;
     }
 }

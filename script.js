@@ -69,27 +69,31 @@ function toggler (){
        
         let dis = document.getElementById('display');
         dis.style.display= 'block';
-        let user = document.getElementById('accountName').value;
-    let account = document.getElementById('accountNumber').value;
+        let accountName = document.getElementById('accountName').value;
+    let accountNumber = document.getElementById('accountNumber').value;
     let amount = parseFloat(document.getElementById('amount').value);
     let   balance =parseFloat (document.getElementById ('accountBalance') .value);  
-    let userObject= { user, account, amount,balance};
-    localStorage.setItem('userObject',JSON.stringify(userObject));
-
+    let  newBalance = (parseFloat(document.getElementById('amount').value))-(parseFloat (document.getElementById ('accountBalance') .value))
+    // let userObject= { accountName, accountNumber, amount,balance};
+    localStorage.setItem('accountName',JSON.stringify(accountName));
+    localStorage.setItem('accountNumber',JSON.stringify(accountNumber));
+    localStorage.setItem('amount',JSON.stringify(amount));
+    localStorage.setItem('balance',JSON.stringify(balance));
     if(amount > balance){
 // display.innerHTML=("INSUFFICIENT FUND");
 alert("INSUFFICIENT FUND");
     }else{
         // display.innerHTML = ('YOU SUCCESFULLY TRANSFER ' + amount + ' TO  ' +  user + '' +  '' + formattedDateTime)
-        alert('YOU SUCCESFULLY TRANSFER ' +amount + ' TO  ' + user+  account + '' + '' + formattedDateTime)
+        alert('YOU SUCCESFULLY TRANSFER ' +amount + ' TO  ' + accountName+  accountNumber + '' + '' + formattedDateTime)
 }
 }
 function history(){
-    let storedUser = localStorage.getItem('userObject');
-    transaction.innerHTML = storedUser
-}function add(){
+    let storedUser = localStorage.getItem('accountName , accountNumber');
+    transaction.innerHTML = ('hello ' + storedUser );
+}
+function add(){
     let adds = save.value;
-    accountBalance.value = ( + adds)
+    accountBalance.value = (  adds)
     alert(adds)
     let close = document.getElementById('saved')
     close.style.display='none';

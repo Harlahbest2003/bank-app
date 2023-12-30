@@ -49,7 +49,7 @@
     <label for="" class="fs-1 fw-1 ms-4">#</label>
     <input class="border-none fs-1 fw-1 text-dark  bg-light" type="number" placeholder="#1,500.00" id="accountBalance" style="width: 150px;" readonly> <br><br>
   
-    <button onclick="transfer()"> TRANSFER</button>
+    <button onclick="transfer()" id="btn"> TRANSFER</button>
     <div id="hidden">
 <input type="text" id="accountNumber" placeholder="enter account number">
 <input type="text" id="accountName" placeholder="enter account name"> 
@@ -58,28 +58,31 @@
 <h6 id="display"></h6>
 
     </div>
-    <button onclick ="addMoney()">SAVES</button>
+    <button onclick ="addMoney()" id="btn">SAVES</button>
   <div id="saved">
     <input type="text" id="save" placeholder="ENTER AMOUNT IN #">
     <button onclick="add()" style="background-color: aqua;">ADD MONEY TO ACCOUNT</button>
   </div>
     <br><br>
-    <button onclick="buyData()"> DATA</button>
+    <button onclick="buyData()" id="btns"> DATA</button>
     <div id="dat">
       <input type="text" id="sat" placeholder="ENTER NUMBER">
       <input type="text" id="dated" placeholder="ENTER MB">
       <button onclick="data()" style="background-color: aqua;">BUY DATA</button>
     </div>
-    <button onclick="airtime()">AIRTIME</button> 
+    <button onclick="airtime()" id="btny">AIRTIME</button> 
     <div id="tim">
       <input type="text" id="air" placeholder="ENTER AMOUNT">
       <input type="text" id="airtim" placeholder="ENTER NETWORK">
       <button onclick="time()" style="background-color: aqua;">BUY DATA</button>
     </div>
     <br><br>
-    <button onclick="borrow()">BORROW</button>
-    <button onclick="history()"> TRANSACTION HISTORY</button>
-    <div id="transaction"></div>
+    <button onclick="borrow()" id="btnb">BORROW</button>
+    <button onclick="history()" id="btnz"> TRANSACTION HISTORY</button>
+    <div id="displaytransaction">
+  
+    </div>
+    <div id="transaction" style="width: 500px;"></div>
     <h1 class="fs-4">FOSTERING FINIANCIAL EXCELLENCE,BUILDING TOMORROWS PROSPERITY TODAY</h1>
    </div>
    
