@@ -6,7 +6,7 @@
     height: 600px;
     width: 1000px;
     position: relative;
-    left: 450px;
+    left: 250px;
     top: 100px;
     
     
@@ -28,6 +28,12 @@
     font-family: sans-serif;
     font-size: large;
     font-weight: 600;
+}
+#useded{
+    width: 200px;
+    height: 50px;
+    background-color: aliceblue;
+
 }
 input{
     border: none;
@@ -113,7 +119,7 @@ a{
 }
 #con{
     background-color: plum;
-    width: 700px;
+    width: 850px;
     height: 700px;
     position: relative;
     color: #fff;

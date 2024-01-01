@@ -3,19 +3,37 @@ function signUp(){
     let number = numberSignup.value;
     let upEmail = emailSignup.value;
     let upPassword = passwordSignup.value;
+         
+   
+  
     if (username === ""|| number ==="" || upEmail=== ""|| upPassword === "") {
         alert("FILL UP THE REQUIRED SPACE");
     } else {
         alert("REGISTERED SUCCESSFUL");
-        window.location.href = 'home.html'
+        window.location.href = 'home.html';
+      
         
     }
     localStorage.setItem('username', username);
     localStorage.setItem('number',number);
     localStorage.setItem('upEmail', upEmail);
     localStorage.setItem('upPassword', upPassword);
+     
+
+     var collect = localStorage.getItem('username');
     
+    //  document.getElementById('useded').innerHTML = collect;
+    
+   console.log(collect);
 }
+function hi(){
+var collect = localStorage.getItem('username');
+    
+     document.getElementById('useded').innerHTML = ' HI,'+ collect;
+    
+//    alert(collect);
+}
+
 function login() {
     let storedEmail = localStorage.getItem('upEmail');
     let storedPassword = localStorage.getItem('upPassword');
