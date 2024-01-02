@@ -111,7 +111,7 @@ function history(){
 }
 function add(){
     let adds = save.value;
-    accountBalance.value = (  adds)
+    accountBalance.innerHTML = adds
     alert(adds)
     let close = document.getElementById('saved')
     close.style.display='none';
