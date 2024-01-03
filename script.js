@@ -87,7 +87,7 @@ function toggler (){
     let   balance = (document.getElementById ('accountBalance') .value);  
     let  newBalance = (parseFloat(document.getElementById('amount').value))-(parseFloat (document.getElementById ('accountBalance') .value))
     // let userObject= { accountName, accountNumber, amount,balance};
-    localStorage.setItem('accountName',);
+    localStorage.setItem('accountName');
     localStorage.setItem('accountNumber');
     localStorage.setItem('amount');
     localStorage.setItem('balance');
@@ -104,7 +104,7 @@ function history(){
     let be = localStorage.getItem('amount')
     let ret = formattedDateTime;
     transaction.innerHTML = ('YOU SEND '+  be+ ""     + 'TO '+bed + " "+ ret);
-    // console.log(bed)
+    console.log(bed)
 }
 function add(){
     let adds = save.value;
