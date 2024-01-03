@@ -11,7 +11,7 @@
  <section class="body">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid ">
-          <a class="navbar-brand fs-4 fw-6" href="">HARLAHBEST BANK <img src="image/logo.png" width="100px" alt=""></a>
+          <a class="navbar-brand fs-4 fw-6" href=""> <img src="image/logo.png" width="250px" alt="" id="log"></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" onclick="toggler()" id="toggleButton">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -35,21 +35,23 @@
           </div>
         </div>
       </nav>
-   <div class="content shadow p-3 mb-5 bg-light rounded mt-4 d d-lg-flex d-sm-none">
-   <div id="con" class=" shadow p-3 mb-5  rounded mt-4">
+   <div class="content shadow p-3 mb-5 bg-light rounded mt-4 d-lg-flex " >
+   <div id="con" class=" shadow p-3 mb-5  rounded mt-4"  >
     <img class="rounded-circle" src="image/people.webp" alt="" width="300px" height="300px">
     <img class="rounded-circle bg-light" src="image/back.png" alt=""  width="300px" height="300px" id="cont">
     <h1 id="H">TRANSACTION ANYTIME ANYWHERE</h1>
     <h4>EMPOWERING FINICIAL FUTURES,ONE TRANSACTION AT A TIME</h4>
    </div>
-   <div class="cont shadow p-3 mb-5  rounded mt-4 bg-light ms-lg-auto me-lg-5" >
+   <div class="cont shadow p-3 mb-5  rounded mt-4 bg-light ms-lg-auto me-lg-5" id="block">
     <h1>
       HARLAHBEST BANK 
     </h1>
-    <p class=" shadow-3 border rounded-3 fs-3 p-1" id="useded" onclick="hi()"> HI</p>
+    <p class=" shadow-3 border rounded-3 fs-3 p-1" id="useded" > HI</p>
+    <p id="digit">ACCOUNT NUMBER</p>
     <label for="" class="fs-1 fw-1 ms-4 me-auto"></label>
     <p class="border-none fs-3 fw-1 text-dark   bg-light shadow-3 border rounded-3 "  id="accountBalance" style="width: 150px; height: 50px;" > <br><br>
     </p>
+   
     <button onclick="transfer()" id="btn"> TRANSFER</button>
     <div id="hidden">
 <input type="text" id="accountNumber" placeholder="enter account number">

@@ -26,13 +26,7 @@ function signUp(){
     
    console.log(collect);
 }
-function hi(){
-var collect = localStorage.getItem('username');
-    
-     document.getElementById('useded').innerHTML = ' HI,'+ collect;
-    
-//    alert(collect);
-}
+
 
 function login() {
     let storedEmail = localStorage.getItem('upEmail');
@@ -90,13 +84,13 @@ function toggler (){
         let accountName = document.getElementById('accountName').value;
     let accountNumber = document.getElementById('accountNumber').value;
     let amount = parseFloat(document.getElementById('amount').value);
-    let   balance =parseFloat (document.getElementById ('accountBalance') .value);  
+    let   balance = (document.getElementById ('accountBalance') .value);  
     let  newBalance = (parseFloat(document.getElementById('amount').value))-(parseFloat (document.getElementById ('accountBalance') .value))
     // let userObject= { accountName, accountNumber, amount,balance};
-    localStorage.setItem('accountName',JSON.stringify(accountName));
-    localStorage.setItem('accountNumber',JSON.stringify(accountNumber));
-    localStorage.setItem('amount',JSON.stringify(amount));
-    localStorage.setItem('balance',JSON.stringify(balance));
+    localStorage.setItem('accountName',);
+    localStorage.setItem('accountNumber');
+    localStorage.setItem('amount');
+    localStorage.setItem('balance');
     if(amount > balance){
 // display.innerHTML=("INSUFFICIENT FUND");
 alert("INSUFFICIENT FUND");
@@ -106,8 +100,11 @@ alert("INSUFFICIENT FUND");
 }
 }
 function history(){
-    let storedUser = localStorage.getItem('accountName , accountNumber');
-    transaction.innerHTML = ('hello ' + storedUser );
+    let bed = localStorage.getItem('accountName');
+    let be = localStorage.getItem('amount')
+    let ret = formattedDateTime;
+    transaction.innerHTML = ('YOU SEND '+  be+ ""     + 'TO '+bed + " "+ ret);
+    // console.log(bed)
 }
 function add(){
     let adds = save.value;
@@ -146,3 +143,28 @@ function time() {
 function borrow(){
     alert('NOT AVAILABLE')
 }
+function digit(){
+    var random = Math.floor(Math.random()*1000000000);
+    var padded = random.toString().padStart(10,'0');
+    var acc =   padded;
+    return acc;
+    
+}
+window.onload = function(){
+    var acc = digit();
+    document.getElementById('digit').innerText = 'ACCOUNT NUMBER : '+ acc
+}
+function hi (){
+return localStorage.getItem('username');
+
+}function dispalyUsername(){
+    var hello = hi()
+    if (hello) {
+        document.getElementById('useded').innerText =  ' HI '+hello;
+    } else {
+        document.getElementById('useded').innerText = " " ;
+    }
+}
+document.addEventListener("DOMContentLoaded", function(){
+    dispalyUsername();
+})
